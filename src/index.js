@@ -11,9 +11,5 @@ root.render(
     <Botao/>
     <Logo/>
 
-        
-        
-     
-
   </div>
 );
