@@ -7,7 +7,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
 
-    <h1>Olá Mundo</h1>
+    <h1>Olá Mundo React</h1>
     <Botao/>
     <Logo/>
 
