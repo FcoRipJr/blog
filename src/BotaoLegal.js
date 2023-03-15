@@ -1,9 +1,9 @@
 import React from 'react'
-import './BotaoLegal.css'
+import styles from './BotaoLegal.module.css'
 const BotaoLegal = ({texto='Cadastrar'}) => {
   return (
     <div>
-      <button className='botaoLegal'>
+      <button className={styles.botaoLegal}>
         {texto}
       </button>
     </div>

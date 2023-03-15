@@ -1,9 +1,9 @@
 import React from 'react'
-import './Alert.css';
+import styles from './Alert.module.css';
 
 const Alert = ({children}) => {
   return (
-    <div className="alert">
+    <div className={styles.alert}>
         {children}
     </div>
   )

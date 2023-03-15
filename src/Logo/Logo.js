@@ -1,10 +1,10 @@
 import React from 'react'
 import Imagem from './Logo.png'
-import './Logo.css'
+import styles from './Logo.module.css'
 const Logo = () => {
   return (
     <div>
-      <img src={Imagem} className="logo" />
+      <img src={Imagem} className={styles.logo} />
     </div>
   )
 }

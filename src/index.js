@@ -7,6 +7,8 @@ import ConsultaApi from './ConsultaApi';
 import ListaImagens from './ListaImagens';
 import ListaTarefas from './ListaTarefas';
 import Logo from './Logo/Logo';
+import styles from './index.module.css'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,6 +36,8 @@ root.render(
     <Alert>
       <p>DESCRIÇÃO DO ERRO</p>
     </Alert>
+
+    <p className={styles.alert}>Sucesso</p>
 
   </div>
 );
