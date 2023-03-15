@@ -8,13 +8,14 @@ import ListaImagens from './ListaImagens';
 import ListaTarefas from './ListaTarefas';
 import Logo from './Logo/Logo';
 import styles from './index.module.css'
+import MeuDiario from './MeuDiario/MeuDiario.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
 
-    <h1>Olá Mundo React</h1>
+    {/* <h1>Olá Mundo React</h1>
     <ConsultaApi/>
     <Botao/>
     <BotaoLegal/>
@@ -37,7 +38,9 @@ root.render(
       <p>DESCRIÇÃO DO ERRO</p>
     </Alert>
 
-    <p className={styles.alert}>Sucesso</p>
-
+    <p className={styles.alert}>Sucesso</p> */}
+  <MeuDiario dia="1"/>
+  <MeuDiario dia="2"/>
+  <MeuDiario dia="3"/>
   </div>
 );
