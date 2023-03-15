@@ -8,13 +8,11 @@ const ListaImagens = () => {
   ]
   return (
     <div>
-        <ul>
           {
-            imagens.map((imagem) => (
-              <li><img src={imagem} alt="" /></li>
+            imagens.map((imagem, index) => (
+              <img src={imagem} alt="" key={index}/>
             ))
-          }
-        </ul>        
+          }      
     </div>
   )
 }
