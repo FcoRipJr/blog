@@ -1,13 +1,32 @@
 .botaoLegal{
-    background-color: #230080;
-    color: #fff;
-    border: 1px solid #230080;
     padding: 10px 20px;
     border-radius: 5px;
 }
-.botaoLegal:hover{
+
+.botaoLilaz{
+    background-color: #230080;
+    color: #fff;
+    border: 1px solid #230080;
+}
+
+.botaoLilaz:hover{
     background-color: #fff;
     color: #230080;
+    -webkit-box-shadow: 0px 0px 300px 25px rgba(35,0,128,1);
+    -moz-box-shadow: 0px 0px 300px 25px rgba(35,0,128,1);
+    box-shadow: 0px 0px 300px 25px rgba(35,0,128,1);
+}
+
+
+.botaoCinza{
+    background-color: #0f8000;
+    color: rgb(36, 30, 30);
+    border: 1px solid #0f8000;
+}
+
+.botaoCinza:hover{
+    background-color: #fff;
+    color: #0f8000;
     -webkit-box-shadow: 0px 0px 300px 25px rgba(35,0,128,1);
     -moz-box-shadow: 0px 0px 300px 25px rgba(35,0,128,1);
     box-shadow: 0px 0px 300px 25px rgba(35,0,128,1);

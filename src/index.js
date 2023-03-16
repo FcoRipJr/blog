@@ -9,6 +9,7 @@ import ListaTarefas from './ListaTarefas';
 import Logo from './Logo/Logo';
 import styles from './index.module.css'
 import MeuDiario from './MeuDiario/MeuDiario.js';
+import Login from './Login/Login.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -38,9 +39,14 @@ root.render(
       <p>DESCRIÇÃO DO ERRO</p>
     </Alert>
 
-    <p className={styles.alert}>Sucesso</p> */}
+    <p className={styles.alert}>Sucesso</p> 
   <MeuDiario dia="1"/>
   <MeuDiario dia="2"/>
-  <MeuDiario dia="3"/>
+  <MeuDiario dia="3"/>*/}
+  <BotaoLegal texto='clique em mim' cor='botaoLilaz'/>
+  <BotaoLegal texto='Cancelar' cor='botaoCinza'/>
+  <br />
+  <br />
+  <Login/>
   </div>
 );
