@@ -4,21 +4,23 @@ const Login = () => {
     const [login, setLogin ]  = useState('')
     const [senha, setSenha ]  = useState('')
     const [type, setType ]  = useState('password')
+
     const hideSenha = (length) => {
         let pass = ''
         for (let i = 0; i < length; i++) {
             pass +='*'
-            
         }
         return pass
     }
+
     const handleSubmit = (event)=>{
         event.preventDefault()
         setLogin('')
         setSenha('')
     }
+
     const handleClick = () => {
-        type === 'password' ? setType('text') : setType('password') 
+        setType(type === 'password' ? 'text' : 'password') 
     }
 
   return (
@@ -28,7 +30,7 @@ const Login = () => {
         </div>
         <div>
             <input type= {type} placeholder='Senha' onChange={(e)=> setSenha(e.target.value)}  value={senha}/>
-        <a onClick={handleClick}>ver</a>
+            <button type='button' onClick={handleClick}>º</button>
         </div>
         <div>
             <input type="submit" value='Login' />
