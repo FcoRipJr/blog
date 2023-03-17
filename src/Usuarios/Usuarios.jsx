@@ -13,8 +13,8 @@ const Usuarios = () => {
   return (
     <div>
       <ul>
-        {usuarios.map((usuario) => (
-            <li>{usuario.name}</li>
+        {usuarios.map((usuario, index) => (
+            <li key={index}>{'nome: '+ usuario.name +'; e-mail: '+ usuario.email+'; cidade: '+ usuario.address.city } </li>
         ))}
       </ul>
     </div>
