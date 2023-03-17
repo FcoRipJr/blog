@@ -10,9 +10,12 @@ import Logo from './Logo/Logo';
 import styles from './index.module.css'
 import MeuDiario from './MeuDiario/MeuDiario.js';
 import Login from './Login/Login.jsx';
+import Usuarios from './Usuarios/Usuarios.jsx';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <div>
 
@@ -42,11 +45,13 @@ root.render(
     <p className={styles.alert}>Sucesso</p> 
   <MeuDiario dia="1"/>
   <MeuDiario dia="2"/>
-  <MeuDiario dia="3"/>*/}
+  <MeuDiario dia="3"/>
   <BotaoLegal texto='clique em mim' cor='botaoLilaz'/>
   <BotaoLegal texto='Cancelar' cor='botaoCinza'/>
   <br />
   <br />
-  <Login/>
+  <Login/>*/}
+<Usuarios/>
+
   </div>
 );
