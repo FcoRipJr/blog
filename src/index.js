@@ -11,6 +11,9 @@ import styles from './index.module.css'
 import MeuDiario from './MeuDiario/MeuDiario.js';
 import Login from './Login/Login.jsx';
 import Usuarios from './Usuarios/Usuarios.jsx';
+import IMC from './IMC/IMC.jsx';
+import ConverteDolar from './ConverteDolar/ConverteDolar.jsx';
+import QrCode from './QrCode/QrCode.jsx';
 
 
 
@@ -50,8 +53,20 @@ root.render(
   <BotaoLegal texto='Cancelar' cor='botaoCinza'/>
   <br />
   <br />
-  <Login/>*/}
-<Usuarios/>
-
+  <Login/>
+<Usuarios/>*/}
+    <hr />
+    <br />
+    <IMC />
+    <br />
+    <hr />
+    <hr />
+    <br />
+    <ConverteDolar />
+    <br />
+    <hr />
+    <hr />
+    <br />
+    <QrCode/>
   </div>
 );
