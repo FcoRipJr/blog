@@ -4,6 +4,7 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Index from './pages/Index';
 import Sobre from './pages/Sobre';
 import Contato from './pages/Contato';
+import Usuario from './pages/Usuario';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,6 +20,7 @@ root.render(
         <Route path='/' element={<Index/>}/>
         <Route path='/sobre' element={<Sobre/>}/>
         <Route path='/contato' element={<Contato/>}/>
+        <Route path='/usuario/:id' element={<Usuario/>}/>
       </Routes>
     </BrowserRouter>
   </div>
