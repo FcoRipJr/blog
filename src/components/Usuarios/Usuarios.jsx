@@ -14,7 +14,7 @@ const Usuarios = () => {
     <div>
       <ul>
         {usuarios.map((usuario, index) => (
-            <li key={index}>{'nome: '+ usuario.name +'; e-mail: '+ usuario.email+'; cidade: '+ usuario.address.city } </li>
+          <li key={index}>{'nome: '+ usuario.name +'; e-mail: '+ usuario.email+'; cidade: '+ usuario.address.city } </li>
         ))}
       </ul>
     </div>
