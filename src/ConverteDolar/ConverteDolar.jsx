@@ -15,7 +15,7 @@ const ConverteDolar = () => {
     const handleSubmit = (event)=>{
       event.preventDefault()
       
-      setValorDolar(valorReal*valorConversao)
+      setValorDolar(valorReal/valorConversao)
   }
 
   return (
