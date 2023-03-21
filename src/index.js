@@ -53,8 +53,8 @@ root.render(
   <BotaoLegal texto='Cancelar' cor='botaoCinza'/>
   <br />
   <br />
-  <Login/>
-<Usuarios/>*/}
+  <Login/>*/}
+    <Usuarios/>
     <hr />
     <br />
     <IMC />

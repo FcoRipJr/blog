@@ -11,6 +11,7 @@ const QrCode = () => {
 
     const handleChange = (value) => {
         setInput(value)
+        console.log(input)
         setSrc(src_base+input) 
     }
 
