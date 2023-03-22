@@ -1,19 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { UsuariosContext } from '../context/UsuariosContext'
 
 const Contato = () => {
-
-  const usuarios = [ 
-    {id: 1, nome: 'João'},
-    {id: 2, nome: 'Maria'},
-    {id: 3, nome: 'Roberta'},
-  ]
+  const {usuarios, setUsuarios} = useContext(UsuariosContext)
 
   return (
     <div> 
       {
-        usuarios.map((usuario) => (
-          <div>
+        usuarios.map((usuario, index) => (
+          <div key={index}>
               <span>{usuario.nome} </span> <br />
               <Link to={`/usuario/${usuario.id}`}>Editar Usuário</Link> <br /> <br /> 
           </div>
