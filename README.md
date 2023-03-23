@@ -112,3 +112,32 @@ if (!empty($_FILES["arquivo"])) {
 }
 ?>
 ```
+
+```
+<?php
+function listar_arquivos($nome, $sobrenome) {
+    $dir = "evidencias/";
+    $arquivos = array();
+
+    // Percorre o diretório em busca de arquivos que possuam a concatenação de $nome e $sobrenome em seu nome
+    foreach (scandir($dir) as $file) {
+        if (is_file($dir . $file) && strpos($file, $nome . '_' . $sobrenome) !== false) {
+            $arquivos[] = $file;
+        }
+    }
+
+    return $arquivos;
+}
+
+// Exemplo de uso
+$nome = "João";
+$sobrenome = "Silva";
+$arquivos = listar_arquivos($nome, $sobrenome);
+
+// Exibe a lista de arquivos
+foreach ($arquivos as $arquivo) {
+    echo $arquivo . "<br>";
+}
+?>
+
+```
