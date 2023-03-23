@@ -68,3 +68,46 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
+<?php
+// Diretório onde os arquivos serão armazenados
+$dir = "evidencias/";
+
+// Tamanho máximo do arquivo (em bytes)
+$tamanho_maximo = 1048576; // 1 MB
+
+// Array com as extensões permitidas
+$extensoes_permitidas = array('pdf', 'jpg', 'png', 'doc');
+
+// Verifica se um arquivo foi enviado
+if (!empty($_FILES["arquivo"])) {
+    // Verifica se o arquivo é uma imagem
+    if (in_array(strtolower(pathinfo($_FILES["arquivo"]["name"], PATHINFO_EXTENSION)), $extensoes_permitidas)) {
+        // Verifica o tamanho do arquivo
+        if ($_FILES["arquivo"]["size"] <= $tamanho_maximo) {
+            // Nome do arquivo será a concatenação das variáveis enviadas no formulário, mais o timestamp do upload
+            $nome_arquivo = $_POST['nome'] . '_' . $_POST['sobrenome'] . '_' . time() . '.' . pathinfo($_FILES["arquivo"]["name"], PATHINFO_EXTENSION);
+
+            // Move o arquivo enviado para o diretório
+            if (move_uploaded_file($_FILES["arquivo"]["tmp_name"], $dir . $nome_arquivo)) {
+                echo "Arquivo enviado com sucesso.";
+            } else {
+                echo "Erro ao enviar o arquivo.";
+            }
+        } else {
+            echo "Tamanho máximo permitido é de " . ($tamanho_maximo / 1048576) . " MB.";
+        }
+    } else {
+        echo "Formato de arquivo não permitido. Os formatos permitidos são: " . implode(", ", $extensoes_permitidas) . ".";
+    }
+} else {
+    echo "Nenhum arquivo enviado.";
+}
+?>
