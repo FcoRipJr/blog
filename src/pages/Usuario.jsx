@@ -7,7 +7,7 @@ const Usuario = () => {
   const {usuarios, setUsuarios} = useContext(UsuariosContext)
   const [usuario, setUsuario] = useState([])
   useEffect( () =>{
-    setUsuario(usuarios.filter((usuario) => usuario.id == id))
+    setUsuario(usuarios.filter((usuario) => usuario.id == id)[0])
     },[]
   )
   console.log(usuarios)
