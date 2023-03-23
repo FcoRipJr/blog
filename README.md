@@ -81,7 +81,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 $dir = "evidencias/";
 
 // Tamanho máximo do arquivo (em bytes)
-$tamanho_maximo = 1048576; // 1 MB
+$tamanho_maximo = 10485760; // 10 MB
 
 // Array com as extensões permitidas
 $extensoes_permitidas = array('pdf', 'jpg', 'png', 'doc');
