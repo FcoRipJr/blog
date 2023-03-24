@@ -70,6 +70,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
+```
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload de Arquivos</title>
+</head>
+<body>
+	<h1>Upload de Arquivos</h1>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+		<label for="nome">Nome:</label>
+		<input type="text" name="nome" id="nome"><br><br>
+
+		<label for="sobrenome">Sobrenome:</label>
+		<input type="text" name="sobrenome" id="sobrenome"><br><br>
+
+		<label for="arquivo">Selecione o arquivo:</label>
+		<input type="file" name="arquivo" id="arquivo"><br><br>
+
+		<input type="submit" name="submit" value="Enviar">
+	</form>
+</body>
+</html>
+
+```
 
 
 
